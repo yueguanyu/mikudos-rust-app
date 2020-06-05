@@ -1,3 +1,5 @@
+use my_mod::traits::Area;
+
 mod my_mod;
 
 #[derive(Debug)]
@@ -12,6 +14,11 @@ impl Rectangle {
     }
 }
 
+#[test]
+fn check() {
+    assert_eq!(2, 1 + 1);
+}
+
 fn main() {
     // let random_boolean = rand::random();
     // println!("You {}!", if random_boolean { "win" } else { "lose" });
@@ -20,6 +27,8 @@ fn main() {
     // let rect = Rectangle::create(30, 50);
     // println!("{:?}", rect);
     // my_mod::collection::test_collection();
-    let circle: my_mod::traits::Circle = my_mod::traits::Circle::new(1.0);
+    let circle = my_mod::traits::Circle { r: 3.0 };
     let round = circle.area();
+    println!("round11 is {}", round);
+    // my_mod::traits::run();
 }
