@@ -27,7 +27,8 @@ fn main() {
     // let rect = Rectangle::create(30, 50);
     // println!("{:?}", rect);
     // my_mod::collection::test_collection();
-    let circle = my_mod::traits::Circle { r: 3.0 };
+    // let circle = my_mod::traits::Circle { r: 3.0 };
+    let circle = my_mod::traits::Circle::new(3.0);
     let round = circle.area();
     println!("round11 is {}", round);
     // my_mod::traits::run();

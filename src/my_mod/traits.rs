@@ -19,11 +19,11 @@ impl Area for Circle {
     }
 }
 
-// impl Area for Circle {
-//     pub fn new(r: f64) -> Circle {
-//         Circle { r: r }
-//     }
-// }
+impl Circle {
+    pub fn new(r: f64) -> Circle {
+        Circle { r: r }
+    }
+}
 
 pub fn run() {
     let circle = Circle { r: 2.0 };
