@@ -15,7 +15,7 @@ pub struct Circle {
 // 让【具体类】实现【接口】
 impl Area for Circle {
     fn area(&self) -> f64 {
-        (std::f64::consts::PI * self.r) // 作为返回值 => 必须使用 () 括起来，并不能写 ;
+        std::f64::consts::PI * self.r // 作为返回值 => 必须使用 () 括起来，并不能写 ;
     }
 }
 
